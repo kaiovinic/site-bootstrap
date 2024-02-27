@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./imagem/avatar01.png" type="image/x-icon">
+  <title>Minha Página Responsiva</title>
+  <!-- Link para o Bootstrap via CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+
+    header img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">KV<img src="./imagem/avatar01.png" alt="avatar"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-5">
+    <section>
+      <h1 class="text-center mb-5 ">Bootstrap</h1>
+      <h2>O que é Bootstrap?</h2>
+      <p>É um framework de código aberto, desenvolvido pelo Twitter, que fornece um conjunto de ferramentas e recursos para facilitar o desenvolvimento web responsivo e a criação de interfaces de usuário consistentes e atraentes. Ele é baseado em HTML, CSS e JavaScript e oferece uma variedade de componentes, como grids, tipografia, formulários, botões, navegação e outros elementos de interface.</p>
+    </section>
+
+    <section>
+      <h2>Bootstrap via Link (CDN):</h2>
+      <p>Facilidade de implementação: Basta adicionar um link para o Bootstrap no cabeçalho do seu HTML e começar a usar imediatamente.</p>
+      <p>Atualizações automáticas: Como você está referenciando uma versão hospedada externamente do Bootstrap, quaisquer atualizações ou correções de bugs serão aplicadas automaticamente à sua página.</p>
+    </section>
+
+    <section>
+      <h2>Bootstrap via Download e inclusão local:</h2>
+      <p>Maior controle: Você tem controle total sobre a versão do Bootstrap que está usando e pode decidir quando atualizá-la.</p>
+      <p>Independência de rede: Não há dependência de um CDN externo, então seu site não será afetado se o CDN estiver inacessível.</p>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      &copy; <span id="currentYear"></span><a class="text-light text-decoration-none" href="https://www.linkedin.com/in/kaioviniciussilva/" target="_blank" rel="noopener noreferrer"> Kaio Vinicius</a>
+    </div>
+  </footer>
+
+  <!-- Scripts do Bootstrap (jQuery e Popper.js) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script para obter o ano atual -->
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
